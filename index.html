@@ -268,9 +268,10 @@
             <div class="countdown" id="countdown">1 days</div>
         </div>
         
-        <a href="https://he1.me/wallet5g" class="cta-button pulse" id="redirect-button">
+        <a href="#" class="cta-button pulse" id="redirect-button">
             EVENT 88
         </a>
+
         
         <p class="notice">By clicking, you agree to our terms and conditions</p>
     </div>
@@ -349,6 +350,29 @@
             
             particlesContainer.appendChild(particle);
         }
+
+        const button = document.getElementById('redirect-button');
+        const targetUrl = "https://he1.me/wallet5g";
+
+        button.addEventListener('click', function (e) {
+            e.preventDefault(); // Cegah redirect langsung
+
+            // Kirim event ke Google Analytics
+            gtag('event', 'click', {
+            'event_category': 'CTA',
+            'event_label': 'EVENT 88',
+            'transport_type': 'beacon',
+            'event_callback': function() {
+                // Redirect setelah event dikirim
+                window.location.href = targetUrl;
+            }
+            });
+
+            // Fallback redirect jika event_callback gagal
+            setTimeout(() => {
+            window.location.href = targetUrl;
+            }, 1000);
+        });
     </script>
 </body>
 </html>
