@@ -273,18 +273,25 @@
         document.getElementById("redirect-button").href = destinationUrl;
         
         // Countdown timer function
-        let seconds = 86400;
+        let seconds = 86400; // 24 jam
         const countdownElement = document.getElementById("countdown");
         
         const countdownTimer = setInterval(() => {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+
+            countdownElement.textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+
             seconds--;
-            countdownElement.textContent = seconds;
-            
-            if (seconds <= 0) {
+
+            if (seconds < 0) {
                 clearInterval(countdownTimer);
                 window.location.href = destinationUrl;
             }
         }, 1000);
+
         
         // Create floating particles
         const particlesContainer = document.getElementById('particles');
