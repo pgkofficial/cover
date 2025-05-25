@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Offer | Event 88</title>
-    	<!-- HTML Meta Tags -->
+    <title>Special Offer | Event 88 - Advanced Analytics</title>
+    
+    <!-- HTML Meta Tags -->
     <title>HeyLink.me | free credit deposit | free deposit bonus | top wallet Malaysia</title>
     <meta name="description" content="Sertai kami di wallet5g untuk mengakses pelbagai kredit percuma dan tawaran eksklusif. Register now!">
 
@@ -22,15 +23,88 @@
     <meta name="twitter:title" content="HeyLink.me | free credit deposit | free deposit bonus | top wallet Malaysia">
     <meta name="twitter:description" content="Sertai kami di wallet5g untuk mengakses pelbagai kredit percuma dan tawaran eksklusif. Register now!">
     <meta name="twitter:image" content="https://cdn-b.heylink.me/media/users/og_image/b6ecca0ca20f4f939680e37833e622c5.webp">
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWPQZ262');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Enhanced Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEED4HM67D"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-SEED4HM67D');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Configure GA4 with enhanced settings
+        gtag('js', new Date());
+        gtag('config', 'G-SEED4HM67D', {
+            // Enhanced measurement settings
+            enhanced_measurement: {
+                scrolls: true,
+                outbound_clicks: true,
+                site_search: false,
+                video_engagement: false,
+                file_downloads: true
+            },
+            // User engagement settings
+            engagement_time_msec: 10000,
+            send_page_view: true,
+            
+            // Custom parameters
+            custom_map: {
+                'custom_parameter_1': 'offer_type',
+                'custom_parameter_2': 'user_source'
+            },
+            
+            // Cookie settings
+            cookie_expires: 63072000, // 2 years
+            cookie_update: true,
+            cookie_flags: 'SameSite=None;Secure',
+            
+            // Additional settings
+            allow_google_signals: true,
+            allow_ad_personalization_signals: true
+        });
+
+        // Enhanced eCommerce setup for conversion tracking
+        gtag('config', 'G-SEED4HM67D', {
+            currency: 'MYR',
+            country: 'MY'
+        });
+
+        // Set user properties
+        gtag('set', {
+            'country': 'Malaysia',
+            'language': 'ms-MY',
+            'page_location': window.location.href,
+            'page_referrer': document.referrer
+        });
     </script>
+
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', '1060542778787657');
+        fbq('track', 'PageView');
+        
+        // Enhanced Facebook events
+        fbq('trackCustom', 'OfferPageView', {
+            offer_type: 'welcome_bonus',
+            page_category: 'landing_page'
+        });
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -318,7 +392,6 @@
             100% { transform: translate(var(--x), var(--y)) rotate(var(--r)); opacity: 0; }
         }
         
-        /* Pop-up Styles */
         .popup-window {
             display: flex;
             justify-content: center;
@@ -409,7 +482,6 @@
             }
         }
         
-        /* Feature icons */
         .features {
             display: flex;
             justify-content: space-between;
@@ -443,7 +515,6 @@
             text-align: center;
         }
         
-        /* Responsive adjustments */
         @media (max-width: 480px) {
             .container {
                 padding: 30px 20px;
@@ -467,7 +538,6 @@
             }
         }
 
-        /* Updated Wrapper Styles for 3 cards in 2 rows */
         .wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -478,17 +548,17 @@
         }
 
         .card:nth-child(1) {
-            grid-column: 1 / 3; /* First card spans both columns */
+            grid-column: 1 / 3;
             justify-self: center;
             max-width: 280px;
         }
 
         .card:nth-child(2) {
-            grid-column: 1; /* Second card in first column, second row */
+            grid-column: 1;
         }
 
         .card:nth-child(3) {
-            grid-column: 2; /* Third card in second column, second row */
+            grid-column: 2;
         }
 
         .card {
@@ -558,7 +628,6 @@
             box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
         }
 
-        /* Mobile responsive adjustments */
         @media (max-width: 480px) {
             .wrapper {
                 gap: 10px;
@@ -590,9 +659,33 @@
             border-radius: 8px;
             cursor: pointer;
         }
+
+        /* Analytics Dashboard Styles */
+        .analytics-debug {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            max-width: 300px;
+            z-index: 10000;
+            display: none;
+        }
+
+        .analytics-debug.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWPQZ262"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="bg-elements">
         <div class="bg-blur bg-blur-1"></div>
         <div class="bg-blur bg-blur-2"></div>
@@ -604,39 +697,39 @@
     <div class="container">
         
         <div class="wrapper">
-            <div class="card">
+            <div class="card" data-brand="bw88">
                 <img src="https://res.cloudinary.com/de3lxw3jo/image/upload/v1747990891/FREE88_mtbeef.gif" alt="bw88 Logo" class="brand-logo">
                 <div class="bonus">Welcome: <span class="value">100%</span></div>
                 <div class="button-container">
-                    <a href="https://t.ly/heybw88" class="claim-btn" target="_blank">Claim Sekarang</a>
+                    <a href="https://t.ly/heybw88" class="claim-btn" target="_blank" data-brand="bw88" data-bonus="100">Claim Sekarang</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-brand="antbet">
                 <img src="https://ant88bet.org/media/36e1c1d435d762ada5836.png" alt="Antbet Logo" class="brand-logo">
                 <div class="bonus">Welcome: <span class="value">120%</span></div>
                 <div class="button-container">
-                    <a href="https://ant88bet.org/RF212098901" class="claim-btn" target="_blank">Claim Sekarang</a>
+                    <a href="https://ant88bet.org/RF212098901" class="claim-btn" target="_blank" data-brand="antbet" data-bonus="120">Claim Sekarang</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-brand="jtb">
                 <img src="https://ant88bet.org/media/4167c5e535d767d829fbd.png" alt="JTB Logo" class="brand-logo">
                 <div class="bonus">Welcome: <span class="value">50%</span></div>
                 <div class="button-container">
-                    <a href="https://jutaboy.org/RF212226631" class="claim-btn" target="_blank">Claim Sekarang</a>
+                    <a href="https://jutaboy.org/RF212226631" class="claim-btn" target="_blank" data-brand="jtb" data-bonus="50">Claim Sekarang</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-brand="bossku">
                 <img src="https://ant88bet.org/media/f718423535d7614995fca.png" alt="Bossku Logo" class="brand-logo">
                 <div class="bonus">Welcome: <span class="value">100%</span></div>
                 <div class="button-container">
-                    <a href="https://bosskumy.pro/RF212225017" class="claim-btn" target="_blank">Claim Sekarang</a>
+                    <a href="https://bosskumy.pro/RF212225017" class="claim-btn" target="_blank" data-brand="bossku" data-bonus="100">Claim Sekarang</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-brand="umibet">
                 <img src="https://ant88bet.org/media/d7ffd26535d768b85c75f.png" alt="umibet Logo" class="brand-logo">
                 <div class="bonus">Welcome: <span class="value">100%</span></div>
                 <div class="button-container">
-                    <a href="https://umibet66.com/RF2122255A2" class="claim-btn" target="_blank">Claim Sekarang</a>
+                    <a href="https://umibet66.com/RF2122255A2" class="claim-btn" target="_blank" data-brand="umibet" data-bonus="100">Claim Sekarang</a>
                 </div>
             </div>
         </div>
@@ -674,25 +767,500 @@
         <p class="notice">By clicking, you agree to our terms and conditions</p>
     </div>
 
-    <!-- POPUP -->
     <div id="popupwindow" class="popup-window">
         <div id="main-notice" class="main-notice">
-            <!-- Close button -->
             <div class="ic-close" id="popup-close">&times;</div>
-
-            <!-- Notice content -->
             <div class="notice-content" data-key="NoticeURL1"></div>
         </div>
     </div>
 
+    <!-- Analytics Debug Panel -->
+    <div id="analytics-debug" class="analytics-debug">
+        <strong>Analytics Status:</strong><br>
+        <span id="debug-content">Loading...</span>
+    </div>
+
     <script>
-        // Set your destination URL here
-        const destinationUrl = "https://he1.me/wallet5g";
-        
-        // Update the button href
-        document.getElementById("redirect-button").href = destinationUrl;
-        
-        // Countdown timer function
+        // Enhanced Analytics Configuration
+        const AnalyticsManager = {
+            // Configuration
+            config: {
+                destinationUrl: "https://he1.me/wallet5g",
+                sessionStart: Date.now(),
+                userId: null,
+                sessionId: null,
+                debug: false // Set to true for debugging
+            },
+
+            // Initialize Analytics
+            init: function() {
+                this.generateIds();
+                this.setupEventListeners();
+                this.trackPageView();
+                this.trackEngagement();
+                this.setupScrollTracking();
+                this.setupHeatmapTracking();
+                
+                if (this.config.debug) {
+                    this.showDebugPanel();
+                }
+            },
+
+            // Generate unique IDs
+            generateIds: function() {
+                this.config.userId = 'user_' + Math.random().toString(36).substr(2, 9);
+                this.config.sessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5);
+            },
+
+            // Track enhanced page view
+            trackPageView: function() {
+                const pageData = {
+                    page_title: document.title,
+                    page_location: window.location.href,
+                    page_referrer: document.referrer,
+                    user_agent: navigator.userAgent,
+                    screen_resolution: screen.width + 'x' + screen.height,
+                    viewport_size: window.innerWidth + 'x' + window.innerHeight,
+                    color_depth: screen.colorDepth,
+                    language: navigator.language,
+                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId,
+                    timestamp: new Date().toISOString()
+                };
+
+                // Send to Google Analytics
+                gtag('event', 'page_view_enhanced', pageData);
+
+                // Send to Google Tag Manager
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'enhanced_page_view',
+                    ...pageData
+                });
+
+                // Send to Facebook Pixel
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'EnhancedPageView', pageData);
+                }
+
+                this.log('Page view tracked', pageData);
+            },
+
+            // Setup comprehensive event listeners
+            setupEventListeners: function() {
+                const self = this;
+
+                // Track all CTA button clicks
+                document.getElementById('redirect-button').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    self.trackCTAClick('main_cta', 'redirect_button');
+                });
+
+                // Track individual brand clicks
+                document.querySelectorAll('.claim-btn').forEach(function(btn) {
+                    btn.addEventListener('click', function(e) {
+                        const brand = this.getAttribute('data-brand');
+                        const bonus = this.getAttribute('data-bonus');
+                        self.trackBrandClick(brand, bonus, this.href);
+                    });
+                });
+
+                // Track popup interactions
+                const popupClose = document.getElementById('popup-close');
+                if (popupClose) {
+                    popupClose.addEventListener('click', function() {
+                        self.trackPopupInteraction('close');
+                    });
+                }
+
+                const noticeContent = document.querySelector('.notice-content');
+                if (noticeContent) {
+                    noticeContent.addEventListener('click', function() {
+                        self.trackPopupInteraction('click');
+                    });
+                }
+
+                // Track feature icon clicks
+                document.querySelectorAll('.feature').forEach(function(feature, index) {
+                    feature.addEventListener('click', function() {
+                        const featureText = this.querySelector('.feature-text').textContent;
+                        self.trackFeatureClick(featureText, index);
+                    });
+                });
+
+                // Track form interactions (if any)
+                this.setupFormTracking();
+
+                // Track external link clicks
+                this.setupExternalLinkTracking();
+            },
+
+            // Track CTA button clicks
+            trackCTAClick: function(buttonType, buttonId) {
+                const eventData = {
+                    event_category: 'CTA',
+                    event_label: buttonType,
+                    button_id: buttonId,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId,
+                    timestamp: new Date().toISOString(),
+                    time_on_page: Date.now() - this.config.sessionStart
+                };
+
+                // Enhanced conversion tracking
+                gtag('event', 'conversion', {
+                    send_to: 'G-SEED4HM67D',
+                    ...eventData
+                });
+
+                // GTM event
+                window.dataLayer.push({
+                    event: 'cta_click',
+                    ...eventData
+                });
+
+                // Facebook conversion
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                        content_name: buttonType,
+                        content_category: 'CTA_Click'
+                    });
+                }
+
+                this.log('CTA Click tracked', eventData);
+
+                // Redirect after tracking
+                setTimeout(() => {
+                    window.location.href = this.config.destinationUrl;
+                }, 300);
+            },
+
+            // Track brand-specific clicks
+            trackBrandClick: function(brand, bonus, url) {
+                const eventData = {
+                    event_category: 'Brand_Selection',
+                    event_label: brand,
+                    bonus_percentage: bonus,
+                    destination_url: url,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId,
+                    timestamp: new Date().toISOString()
+                };
+
+                gtag('event', 'select_content', {
+                    content_type: 'brand',
+                    content_id: brand,
+                    ...eventData
+                });
+
+                window.dataLayer.push({
+                    event: 'brand_click',
+                    ...eventData
+                });
+
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'BrandSelection', eventData);
+                }
+
+                this.log('Brand click tracked', eventData);
+            },
+
+            // Track popup interactions
+            trackPopupInteraction: function(action) {
+                const eventData = {
+                    event_category: 'Popup',
+                    event_label: action,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId,
+                    timestamp: new Date().toISOString()
+                };
+
+                gtag('event', 'popup_interaction', eventData);
+
+                window.dataLayer.push({
+                    event: 'popup_interaction',
+                    ...eventData
+                });
+
+                this.log('Popup interaction tracked', eventData);
+            },
+
+            // Track feature clicks
+            trackFeatureClick: function(featureName, index) {
+                const eventData = {
+                    event_category: 'Feature',
+                    event_label: featureName,
+                    feature_index: index,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId
+                };
+
+                gtag('event', 'feature_click', eventData);
+                window.dataLayer.push({
+                    event: 'feature_click',
+                    ...eventData
+                });
+
+                this.log('Feature click tracked', eventData);
+            },
+
+            // Track user engagement
+            trackEngagement: function() {
+                const self = this;
+                let engagementTimer = 0;
+                let isActive = true;
+
+                // Track time on page every 10 seconds
+                setInterval(function() {
+                    if (isActive) {
+                        engagementTimer += 10;
+                        
+                        // Send engagement event every 30 seconds
+                        if (engagementTimer % 30 === 0) {
+                            gtag('event', 'user_engagement', {
+                                engagement_time_msec: engagementTimer * 1000,
+                                user_id: self.config.userId,
+                                session_id: self.config.sessionId
+                            });
+                        }
+                    }
+                }, 10000);
+
+                // Track when user becomes inactive/active
+                document.addEventListener('visibilitychange', function() {
+                    isActive = !document.hidden;
+                    
+                    gtag('event', 'page_visibility', {
+                        visibility_state: document.hidden ? 'hidden' : 'visible',
+                        time_on_page: engagementTimer
+                    });
+                });
+
+                // Track mouse movement for engagement
+                let mouseMovements = 0;
+                document.addEventListener('mousemove', function() {
+                    mouseMovements++;
+                    if (mouseMovements % 100 === 0) {
+                        gtag('event', 'user_activity', {
+                            activity_type: 'mouse_movement',
+                            activity_count: mouseMovements
+                        });
+                    }
+                });
+            },
+
+            // Setup scroll tracking
+            setupScrollTracking: function() {
+                let scrollDepths = [25, 50, 75, 90];
+                let trackedDepths = [];
+
+                window.addEventListener('scroll', function() {
+                    const scrollPercent = Math.round(
+                        (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
+                    );
+
+                    scrollDepths.forEach(function(depth) {
+                        if (scrollPercent >= depth && !trackedDepths.includes(depth)) {
+                            trackedDepths.push(depth);
+                            
+                            gtag('event', 'scroll', {
+                                event_category: 'Engagement',
+                                event_label: depth + '%',
+                                value: depth
+                            });
+
+                            window.dataLayer.push({
+                                event: 'scroll_depth',
+                                scroll_depth: depth,
+                                user_id: AnalyticsManager.config.userId
+                            });
+                        }
+                    });
+                });
+            },
+
+            // Setup heatmap tracking
+            setupHeatmapTracking: function() {
+                const self = this;
+                
+                document.addEventListener('click', function(e) {
+                    const clickData = {
+                        element: e.target.tagName,
+                        className: e.target.className,
+                        id: e.target.id,
+                        x: e.clientX,
+                        y: e.clientY,
+                        timestamp: new Date().toISOString()
+                    };
+
+                    gtag('event', 'click_heatmap', {
+                        event_category: 'Heatmap',
+                        custom_parameters: clickData
+                    });
+
+                    self.log('Click tracked', clickData);
+                });
+            },
+
+            // Setup form tracking
+            setupFormTracking: function() {
+                // Track any form interactions if forms exist
+                document.querySelectorAll('form').forEach(function(form) {
+                    form.addEventListener('submit', function(e) {
+                        gtag('event', 'form_submit', {
+                            event_category: 'Form',
+                            event_label: 'submit'
+                        });
+                    });
+                });
+
+                document.querySelectorAll('input, select, textarea').forEach(function(field) {
+                    field.addEventListener('focus', function() {
+                        gtag('event', 'form_field_focus', {
+                            event_category: 'Form',
+                            event_label: this.name || this.id || 'unnamed_field'
+                        });
+                    });
+                });
+            },
+
+            // Setup external link tracking
+            setupExternalLinkTracking: function() {
+                document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        gtag('event', 'external_link_click', {
+                            event_category: 'External Links',
+                            event_label: this.href,
+                            transport_type: 'beacon'
+                        });
+                    });
+                });
+            },
+
+            // Error tracking
+            setupErrorTracking: function() {
+                window.addEventListener('error', function(e) {
+                    gtag('event', 'javascript_error', {
+                        event_category: 'Error',
+                        event_label: e.message,
+                        value: e.lineno
+                    });
+                });
+
+                window.addEventListener('unhandledrejection', function(e) {
+                    gtag('event', 'promise_rejection', {
+                        event_category: 'Error',
+                        event_label: e.reason
+                    });
+                });
+            },
+
+            // Performance tracking
+            trackPerformance: function() {
+                window.addEventListener('load', function() {
+                    setTimeout(function() {
+                        const perfData = performance.timing;
+                        const loadTime = perfData.loadEventEnd - perfData.navigationStart;
+                        
+                        gtag('event', 'page_load_time', {
+                            event_category: 'Performance',
+                            value: Math.round(loadTime),
+                            custom_parameters: {
+                                dns_time: perfData.domainLookupEnd - perfData.domainLookupStart,
+                                connect_time: perfData.connectEnd - perfData.connectStart,
+                                response_time: perfData.responseEnd - perfData.responseStart,
+                                dom_load_time: perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart
+                            }
+                        });
+                    }, 0);
+                });
+            },
+
+            // Conversion funnel tracking
+            trackConversionFunnel: function(step, stepName) {
+                gtag('event', 'conversion_funnel', {
+                    event_category: 'Funnel',
+                    event_label: stepName,
+                    value: step,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId
+                });
+
+                window.dataLayer.push({
+                    event: 'funnel_step',
+                    funnel_step: step,
+                    funnel_step_name: stepName,
+                    user_id: this.config.userId
+                });
+            },
+
+            // A/B Testing support
+            trackABTest: function(experimentId, variantId) {
+                gtag('event', 'ab_test', {
+                    event_category: 'Experiment',
+                    event_label: experimentId,
+                    value: variantId,
+                    custom_parameters: {
+                        experiment_id: experimentId,
+                        variant_id: variantId
+                    }
+                });
+            },
+
+            // Custom event tracking
+            trackCustomEvent: function(eventName, eventData) {
+                gtag('event', eventName, {
+                    ...eventData,
+                    user_id: this.config.userId,
+                    session_id: this.config.sessionId,
+                    timestamp: new Date().toISOString()
+                });
+
+                window.dataLayer.push({
+                    event: eventName,
+                    ...eventData
+                });
+
+                this.log('Custom event tracked', {eventName, eventData});
+            },
+
+            // Debug panel
+            showDebugPanel: function() {
+                const debugPanel = document.getElementById('analytics-debug');
+                debugPanel.classList.add('show');
+                
+                setInterval(() => {
+                    const debugContent = document.getElementById('debug-content');
+                    debugContent.innerHTML = `
+                        User ID: ${this.config.userId}<br>
+                        Session ID: ${this.config.sessionId}<br>
+                        Time on Page: ${Math.round((Date.now() - this.config.sessionStart) / 1000)}s<br>
+                        Events Sent: ${this.eventCount || 0}
+                    `;
+                }, 1000);
+            },
+
+            // Logging function
+            log: function(message, data) {
+                if (this.config.debug) {
+                    console.log('[Analytics]', message, data);
+                }
+                this.eventCount = (this.eventCount || 0) + 1;
+            }
+        };
+
+        // Initialize Analytics when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            AnalyticsManager.init();
+            AnalyticsManager.setupErrorTracking();
+            AnalyticsManager.trackPerformance();
+            
+            // Track initial funnel step
+            AnalyticsManager.trackConversionFunnel(1, 'Landing Page View');
+        });
+
+        // Enhanced countdown timer with analytics
         let seconds = 86400; // 24 hours
         const countdownElement = document.getElementById("countdown");
         
@@ -704,15 +1272,36 @@
             countdownElement.textContent = 
                 `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 
+            // Track countdown milestones
+            if (seconds === 82800) { // 23 hours remaining
+                AnalyticsManager.trackCustomEvent('countdown_milestone', {
+                    milestone: '23_hours_remaining',
+                    urgency_level: 'low'
+                });
+            } else if (seconds === 3600) { // 1 hour remaining
+                AnalyticsManager.trackCustomEvent('countdown_milestone', {
+                    milestone: '1_hour_remaining',
+                    urgency_level: 'high'
+                });
+            } else if (seconds === 300) { // 5 minutes remaining
+                AnalyticsManager.trackCustomEvent('countdown_milestone', {
+                    milestone: '5_minutes_remaining',
+                    urgency_level: 'critical'
+                });
+            }
+
             seconds--;
 
             if (seconds < 0) {
                 clearInterval(countdownTimer);
-                window.location.href = destinationUrl;
+                AnalyticsManager.trackCustomEvent('countdown_expired', {
+                    action: 'auto_redirect'
+                });
+                window.location.href = AnalyticsManager.config.destinationUrl;
             }
         }, 1000);
         
-        // Create floating particles
+        // Create floating particles with performance monitoring
         const particlesContainer = document.getElementById('particles');
         const particleCount = 20;
         
@@ -724,19 +1313,15 @@
             const particle = document.createElement('div');
             particle.classList.add('particle');
             
-            // Random size between 3px and 15px
             const size = Math.random() * 12 + 3;
             particle.style.width = `${size}px`;
             particle.style.height = `${size}px`;
             
-            // Random position
             particle.style.left = `${Math.random() * 100}%`;
             particle.style.top = `${Math.random() * 100}%`;
             
-            // Random opacity
             particle.style.opacity = Math.random() * 0.3 + 0.1;
             
-            // Generate random color
             const colors = [
                 'rgba(255, 45, 85, 0.8)', 
                 'rgba(37, 244, 238, 0.8)', 
@@ -744,59 +1329,36 @@
             ];
             particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             
-            // Random duration
             const duration = Math.random() * 15 + 10;
-            
-            // Random movement variables
             const xMove = Math.random() * 200 - 100;
             const yMove = Math.random() * 200 - 100;
             const rotation = Math.random() * 360;
             
-            // Set CSS variables for the animation
             particle.style.setProperty('--x', `${xMove}px`);
             particle.style.setProperty('--y', `${yMove}px`);
             particle.style.setProperty('--r', `${rotation}deg`);
             
-            // Apply animation with random duration and delay
             particle.style.animation = `float ${duration}s ${Math.random() * 5}s infinite`;
             
             particlesContainer.appendChild(particle);
         }
 
-        const button = document.getElementById('redirect-button');
-        const targetUrl = "https://he1.me/wallet5g";
-
-        button.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent direct redirect
-
-            // Send event to Google Analytics
-            gtag('event', 'click', {
-                'event_category': 'CTA',
-                'event_label': 'EVENT 88',
-                'transport_type': 'beacon',
-                'event_callback': function() {
-                    // Redirect after event is sent
-                    window.location.href = targetUrl;
-                }
-            });
-
-            // Fallback redirect if event_callback fails
-            setTimeout(() => {
-                window.location.href = targetUrl;
-            }, 1000);
-        });
-        
-        // Popup handling
+        // Enhanced popup handling with analytics
         document.addEventListener("DOMContentLoaded", function () {
             const popup = document.getElementById("popupwindow");
             const closeBtn = document.getElementById("popup-close");
             const mainNotice = document.getElementById("main-notice");
             const noticeContent = document.querySelector(".notice-content");
 
-            // Close button
+            // Track popup view
+            AnalyticsManager.trackCustomEvent('popup_view', {
+                popup_type: 'promotional',
+                auto_shown: true
+            });
+
             if (closeBtn && popup) {
                 closeBtn.addEventListener("click", function (e) {
-                    e.stopPropagation(); // Prevent click from triggering parent elements
+                    e.stopPropagation();
                     popup.style.opacity = "0";
                     setTimeout(() => {
                         popup.style.display = "none";
@@ -804,16 +1366,64 @@
                 });
             }
 
-            // Click anywhere on the notice to redirect
             if (mainNotice) {
                 noticeContent.addEventListener("click", function () {
-                    window.location.href = targetUrl;
+                    AnalyticsManager.trackCustomEvent('popup_cta_click', {
+                        popup_type: 'promotional',
+                        action: 'redirect'
+                    });
+                    window.location.href = AnalyticsManager.config.destinationUrl;
                 });
             }
             
-            // Animation for popup
             mainNotice.style.animation = "gameani 1.5s ease-in-out infinite";
         });
+
+        // Additional GTM DataLayer events
+        window.dataLayer = window.dataLayer || [];
+
+        // Push initial data
+        window.dataLayer.push({
+            event: 'page_data',
+            page_type: 'landing_page',
+            offer_type: 'welcome_bonus',
+            campaign: 'event_88',
+            user_country: 'Malaysia',
+            page_language: 'ms-MY'
+        });
+
+        // Track site interactions
+        window.dataLayer.push({
+            event: 'site_interaction',
+            interaction_type: 'page_load',
+            timestamp: new Date().toISOString()
+        });
+
+        // Enhanced eCommerce tracking for GTM
+        function trackPurchaseIntent(brand, bonus) {
+            window.dataLayer.push({
+                event: 'purchase_intent',
+                ecommerce: {
+                    currency: 'MYR',
+                    value: bonus,
+                    items: [{
+                        item_id: brand,
+                        item_name: brand + ' Welcome Bonus',
+                        item_category: 'Casino Bonus',
+                        item_variant: bonus + '%',
+                        quantity: 1,
+                        price: bonus
+                    }]
+                }
+            });
+        }
     </script>
+
+    <!-- Additional tracking pixels for comprehensive analytics -->
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=1060542778787657&ev=PageView&noscript=1"/>
+    </noscript>
+
 </body>
 </html>
