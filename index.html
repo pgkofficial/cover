@@ -542,15 +542,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto;
-            gap: 15px;
-            padding: 15px 0;
+            gap: 0px;
+            padding: 0px 0;
             margin-bottom: 20px;
         }
 
         .card:nth-child(1) {
             grid-column: 1 / 3;
             justify-self: center;
-            max-width: 280px;
         }
 
         .card:nth-child(2) {
@@ -564,13 +563,14 @@
         .card {
             background: linear-gradient(180deg, #1c1c1c, #2a2a2a);
             border-radius: 20px;
-            border: 2px solid #F0730A;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            border: 0px solid #F0730A;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);
             padding: 15px;
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
             box-sizing: border-box;
             width: 100%;
+            background: transparent;
         }
 
         .card:hover {
@@ -579,7 +579,8 @@
         }
 
         .card .brand-logo {
-            max-width: 80px;
+            max-width: 300px;
+            border-radius: 5px;
             margin-bottom: 10px;
             display: block;
             margin-left: auto;
@@ -599,7 +600,7 @@
         }
 
         .card .bonus {
-            font-size: 10px;
+            font-size: 30px;
             color: #fff;
             margin-bottom: 3px;
         }
@@ -610,7 +611,7 @@
         }
 
         .claim-btn {
-            font-size: 10px;
+            font-size: 20px;
             display: inline-block;
             margin-top: 8px;
             padding: 6px 12px;
@@ -698,41 +699,17 @@
         
         <div class="wrapper">
             <div class="card" data-brand="bw88">
-                <img src="https://res.cloudinary.com/de3lxw3jo/image/upload/v1747990891/FREE88_mtbeef.gif" alt="bw88 Logo" class="brand-logo">
-                <div class="bonus">Welcome: <span class="value">100%</span></div>
+                <img src="https://res.cloudinary.com/dhlurazyu/image/upload/v1748429739/WALLET5G_izg3or.png" alt="bw88 Logo" class="brand-logo">
+                <div class="bonus">Welcome: <span class="value">180%</span></div>
                 <div class="button-container">
-                    <a href="https://t.ly/heybw88" class="claim-btn" target="_blank" data-brand="bw88" data-bonus="100">Claim Sekarang</a>
-                </div>
-            </div>
-            <div class="card" data-brand="antbet">
-                <img src="https://ant88bet.org/media/36e1c1d435d762ada5836.png" alt="Antbet Logo" class="brand-logo">
-                <div class="bonus">Welcome: <span class="value">120%</span></div>
-                <div class="button-container">
-                    <a href="https://ant88bet.org/RF212098901" class="claim-btn" target="_blank" data-brand="antbet" data-bonus="120">Claim Sekarang</a>
-                </div>
-            </div>
-            <div class="card" data-brand="jtb">
-                <img src="https://ant88bet.org/media/4167c5e535d767d829fbd.png" alt="JTB Logo" class="brand-logo">
-                <div class="bonus">Welcome: <span class="value">50%</span></div>
-                <div class="button-container">
-                    <a href="https://jutaboy.org/RF212226631" class="claim-btn" target="_blank" data-brand="jtb" data-bonus="50">Claim Sekarang</a>
-                </div>
-            </div>
-            <div class="card" data-brand="bossku">
-                <img src="https://ant88bet.org/media/f718423535d7614995fca.png" alt="Bossku Logo" class="brand-logo">
-                <div class="bonus">Welcome: <span class="value">100%</span></div>
-                <div class="button-container">
-                    <a href="https://bosskumy.pro/RF212225017" class="claim-btn" target="_blank" data-brand="bossku" data-bonus="100">Claim Sekarang</a>
-                </div>
-            </div>
-            <div class="card" data-brand="umibet">
-                <img src="https://ant88bet.org/media/d7ffd26535d768b85c75f.png" alt="umibet Logo" class="brand-logo">
-                <div class="bonus">Welcome: <span class="value">100%</span></div>
-                <div class="button-container">
-                    <a href="https://umibet66.com/RF2122255A2" class="claim-btn" target="_blank" data-brand="umibet" data-bonus="100">Claim Sekarang</a>
+                    <a href="https://wallet5g.com" class="claim-btn" target="_blank" data-brand="bw88" data-bonus="100">Claim Sekarang</a>
                 </div>
             </div>
         </div>
+
+        <a href="#" class="cta-button pulse" id="redirect-button">
+            <i class="fas fa-trophy"></i> Get Now!
+        </a>
 
         <div class="features">
             <div class="feature">
@@ -759,10 +736,6 @@
             <div class="countdown-label">Offer expires in:</div>
             <div class="countdown" id="countdown">00:00:00</div>
         </div>
-        
-        <a href="#" class="cta-button pulse" id="redirect-button">
-            <i class="fas fa-trophy"></i> 365days Special Free
-        </a>
         
         <p class="notice">By clicking, you agree to our terms and conditions</p>
     </div>
